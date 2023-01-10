@@ -1,0 +1,446 @@
+/* ================================================================================================
+1. App & Navigation
+================================================================================================ */
+
+.appBody::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.appBody {
+  font-size: 22px;
+  font-family: "PirataOne-Gloomhaven";
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.navButtonContainer {
+  height: 5vh;
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+}
+
+.navButtonActive {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor:default;
+  display: inline-block;
+  font-size: 100%;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 25%;
+  height: 100%;
+  font-family: "PirataOne-Gloomhaven";
+  letter-spacing: 2px;
+}
+
+.navButtonActive:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.navButtonActive:hover {
+  background-color: #2c974b;
+}
+
+.navButtonActive:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.navButtonActive:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.navButtonInactive {
+  appearance: none;
+  background-color: #be4019;
+  border: 1px solid rgba(112, 27, 21, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(170, 38, 60, 0.6) 0 1px 0;
+  box-sizing: border-box; 
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 100%;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 25%;
+  height: 100%;
+  font-family: "PirataOne-Gloomhaven";
+  letter-spacing: 2px;
+}
+
+.navButtonInactive:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.navButtonInactive:hover {
+  background-color: #8a361c;
+}
+
+.navButtonInactive:focus {
+  box-shadow: #8b3318 0 0 0 3px;
+  outline: none;
+}
+
+.navButtonInactive:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+/* ================================================================================================
+2. Create-Module
+================================================================================================ */
+
+
+.createHeaders {
+  height: calc((100vh - 17vh) / 14);
+  margin: 0;
+  font-size: calc((100vh - 17vh) / 14 - 1vh);
+}
+
+.createButtonsContainer {
+height: calc((100vh - 17vh) / 14);
+margin: 0;
+}
+
+.createButtonsIncrease {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor:default;
+  display: inline-block;
+  font-size: 100%;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 5%;
+  height: calc((100vh - 17vh) / 14);
+  font-family: "PirataOne-Gloomhaven";
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+.createButtonsIncrease:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.createButtonsIncrease:hover {
+  background-color: #2c974b;
+}
+
+.createButtonsIncrease:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.createButtonsIncrease:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+.createButtonsDecrease {
+  appearance: none;
+  background-color: #be4019;
+  border: 1px solid rgba(112, 27, 21, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(170, 38, 60, 0.6) 0 1px 0;
+  box-sizing: border-box; 
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 100%;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 5%;
+  height: calc((100vh - 17vh) / 14);
+  font-family: "PirataOne-Gloomhaven";
+  letter-spacing: 2px;
+}
+
+.createButtonsDecrease:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.createButtonsDecrease:hover {
+  background-color: #8a361c;
+}
+
+.createButtonsDecrease:focus {
+  box-shadow: #8b3318 0 0 0 3px;
+  outline: none;
+}
+
+.createButtonsDecrease:active {
+  background-color: #361f05e1;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.createButtonsDecrease:disabled {
+  background-color: grey;
+}
+
+.simpleButton {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  font-family: "PirataOne-Gloomhaven";
+  letter-spacing: 2px;
+  height: 5vh;
+  font-size: 75%;
+}
+
+.showResetButton {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.acceptButton {
+  background-color: green;
+  width: 25%;
+}
+
+.cancelButton {
+  background-color: rgb(165, 29, 29);
+  width: 25%;
+}
+
+
+/* ================================================================================================
+3. Played-Module
+================================================================================================ */
+
+.playedButtonsContainer {
+  height: 62vh
+}
+
+.playedButtonsButtons {
+  height: 50%;
+}
+
+.playedCardcounterContainer {
+  height: 31vh;
+  width: 50vw
+}
+
+.playedCardcounterDisplay {
+  height: calc(100% / 8);
+  text-align: right;
+  font-size: 3vh;
+}
+
+.playedCardcounterShuffleButton {
+  position: absolute;
+  bottom: 4vh;
+  font-size: 100%;
+}
+
+.spinMove {
+  filter: grayscale(70%);
+  scale: 90%;
+}
+
+
+/* ================================================================================================
+4. Probability-Module
+================================================================================================ */
+
+.canvasContainer {
+  width: 100vw;
+  height: calc(100vh - 6vh);
+  margin: 0;
+}
+
+#canvasStyle {
+  height: calc(100vh - 6vh);
+  width: 100vw;
+}
+
+
+/* ================================================================================================
+5. Modificators-Module
+================================================================================================ */
+
+.modificatorsInputContainer {
+  text-align: center;
+  font-size: 4vh;
+  line-height: 180%;
+}
+
+.modificatorsResultsContainer {
+  font-size: 4vh;
+}
+
+.modificatorsResultsPercent {
+  width: 5%;
+  margin: auto;
+}
+
+.modificatorsInputCalculate {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor:default;
+  display: inline-block;
+  font-size: 75%;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 5%;
+  height: calc((100vh - 17vh) / 14);
+  font-family: "PirataOne-Gloomhaven";
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+.modificatorsInputCalculate:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.modificatorsInputCalculate:hover {
+  background-color: #2c974b;
+}
+
+.modificatorsInputCalculate:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.modificatorsInputCalculate:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+.modificatorsInputReset {
+  appearance: none;
+  background-color: #000000;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor:default;
+  display: inline-block;
+  font-size: 75%;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 5%;
+  height: calc((100vh - 17vh) / 14);
+  font-family: "PirataOne-Gloomhaven";
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+.modificatorsInputReset:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.modificatorsInputReset:hover {
+  background-color: #252525;
+}
+
+.modificatorsInputReset:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.modificatorsInputReset:active {
+  background-color: #2b2b2b83;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
